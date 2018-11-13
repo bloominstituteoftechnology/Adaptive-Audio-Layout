@@ -18,42 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j98-ex-cmB">
-                                <rect key="frame" x="132" y="186" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1W-aN-m1n">
-                                <rect key="frame" x="89" y="635" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGj-AH-N8n">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGj-AH-N8n">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="hm5-aG-3LB"/>
                                     <barButtonItem title="Play" id="aea-E2-bA6"/>
                                     <barButtonItem enabled="NO" width="42" style="plain" systemItem="fixedSpace" id="Anv-i5-3wk"/>
-                                    <barButtonItem title="Pause" id="LdA-Bq-N6k"/>
+                                    <barButtonItem enabled="NO" title="Pause" id="LdA-Bq-N6k"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="D6W-pN-ZiW"/>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LL5-et-jsL">
-                                <rect key="frame" x="33" y="383" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="LL5-et-jsL">
+                                <rect key="frame" x="67" y="149" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lambda Radio FM: Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="j98-ex-cmB">
+                                <rect key="frame" x="0.0" y="508" width="375" height="115"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SGj-AH-N8n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4iU-2d-pEV"/>
+                            <constraint firstItem="SGj-AH-N8n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ji6-tz-j2T"/>
+                            <constraint firstItem="SGj-AH-N8n" firstAttribute="top" secondItem="j98-ex-cmB" secondAttribute="bottom" id="mjX-Jw-W4E"/>
+                            <constraint firstItem="j98-ex-cmB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ndz-L8-k2t"/>
+                            <constraint firstAttribute="trailing" secondItem="j98-ex-cmB" secondAttribute="trailing" id="qSP-MX-Vd4"/>
+                            <constraint firstItem="SGj-AH-N8n" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="y9s-WB-DYO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-156" y="25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="vintage-technology-music-old" width="525" height="350"/>
+    </resources>
 </document>
