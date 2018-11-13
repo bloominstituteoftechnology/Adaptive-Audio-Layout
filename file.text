@@ -1,0 +1,10 @@
+1. Auto layout is a built-in Xcode framework that helps create an interface that is graceful and looks good on different devices and orientations. It is a constraint-based system that lets you declare where views are positioned in relation to each other and the content in which they are being presented.
+
+2. A constraint is a bit of linear algebra, algebra that all runs at the same time, we set mathematical constants and multipliers associated with how things are laid out in relation to each other. We can establish priorities for certain constraints over other constraints.
+Content hugging and compression resistance are constraints.
+
+3. Priority allows us to establish certain constraints as more important than other constraints within the UI. You adjust priority when there are two conflicting constraints and you want one favored over the other.
+
+4. Stack views should be used AS OFTEN AS POSSIBLE when you are dealing with multiple objects that are being constrained in relation to one another. Stack views allow you to establish constraints between the items inside the stack view, and they also allow you to establish constraints between the stack view and any other objects in the UI.
+
+5. Text autoshrink is accessed when selecting a label or textView and going to the attributes inspector. It allows you to set a minimum font size/scale. An advantage is that if the object is compressed the text will shrink until a certain point, allowing the user to continue to interact with your app. A disadvantage is that sometimes you would not want the text to shrink?
