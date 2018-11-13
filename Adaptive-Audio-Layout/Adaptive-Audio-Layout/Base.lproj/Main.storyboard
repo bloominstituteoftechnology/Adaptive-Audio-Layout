@@ -19,39 +19,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-WV-1eO">
-                                <rect key="frame" x="0.0" y="20" width="375" height="524"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="389"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="g1q-kT-rt2">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="389"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lambda Radio FM: Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="hjj-f5-70j">
-                                        <rect key="frame" x="9.5" y="370" width="356.5" height="154"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="48"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="g1q-kT-rt2" firstAttribute="leading" secondItem="hBc-WV-1eO" secondAttribute="leading" id="RdM-2q-mwt"/>
+                                    <constraint firstAttribute="trailing" secondItem="g1q-kT-rt2" secondAttribute="trailing" id="hnj-yr-NMU"/>
+                                    <constraint firstItem="g1q-kT-rt2" firstAttribute="top" secondItem="hBc-WV-1eO" secondAttribute="top" id="pLw-YO-yID"/>
+                                </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Lambda Radio FM: Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="hjj-f5-70j">
+                                <rect key="frame" x="0.0" y="429" width="375" height="154"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hBc-WV-1eO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2fz-ro-jyK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hjj-f5-70j" secondAttribute="trailing" id="48O-zw-Dr4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hBc-WV-1eO" secondAttribute="trailing" id="PLP-WT-MDT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hjj-f5-70j" secondAttribute="bottom" constant="40" id="Spy-a1-lFy"/>
                             <constraint firstItem="hBc-WV-1eO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XvY-qX-4pR"/>
+                            <constraint firstItem="hjj-f5-70j" firstAttribute="top" secondItem="hBc-WV-1eO" secondAttribute="bottom" constant="20" id="diI-P5-NWo"/>
+                            <constraint firstItem="hjj-f5-70j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fcE-B1-uMQ"/>
+                            <constraint firstItem="hjj-f5-70j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vZG-gU-YPC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems>
                         <barButtonItem width="146" id="keH-cK-KFc"/>
-                        <barButtonItem systemItem="play" id="PQ7-gt-7ob"/>
+                        <barButtonItem systemItem="play" id="PQ7-gt-7ob">
+                            <connections>
+                                <action selector="playButton:" destination="BYZ-38-t0r" id="kgd-je-ja4"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem width="23" id="tGL-a3-Hrc"/>
-                        <barButtonItem enabled="NO" systemItem="pause" id="Xg7-e7-0NK"/>
+                        <barButtonItem enabled="NO" systemItem="pause" id="Xg7-e7-0NK">
+                            <connections>
+                                <action selector="pauseButton:" destination="BYZ-38-t0r" id="iEv-nv-HaA"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem id="sBd-5L-NxN"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pauseButton" destination="Xg7-e7-0NK" id="O4B-Hq-jlU"/>
+                        <outlet property="playButton" destination="PQ7-gt-7ob" id="Iwo-Rb-eyS"/>
+                        <outlet property="player" destination="8bC-Xf-vdC" id="3k8-Hx-sbu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="ZP9-Vt-5ww"/>
+                <customObject id="ZP9-Vt-5ww" customClass="AudioHelper" customModule="Adaptive_Audio_Layout" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
         </scene>
