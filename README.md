@@ -72,11 +72,19 @@ class AudioHelper: NSObject {
 
 ## IB Layout
 
-Populate the toolbar with five items: a flexible space followed by a button (label it with the system Play item), a fixed space, another button (with the system Pause item), and another flexible space. Use the attributes inspector to disable the pause button.
+Populate the toolbar with five items: 
+
+- a flexible space 
+- followed by a button (label it with the system Play item)
+- a fixed space
+- another button (with the system Pause item)
+- and another flexible space
+
+Use the attributes inspector to disable the pause button.
 
 Use constraints to place the toolbar flush against the bottom safe area, and abutting the leading and trailing safe areas.
 
-Use the included radio image from Pexels.com. Without resizing the image, add it to an image view. Set the content mode to scale aspect fill. Enable Clips to Bounds.
+Use the included radio image from Pexels.com. Without resizing the image, add it to an image view. Set the content mode to scale aspect fill. Enable Clip to Bounds.
 
 Create a label with the text "Lambda Radio FM: Voice of the Future". Set the font size to 48 points and select any font face other than the system default. Enable Autoshrink as Minimum Font Scale and set its value to 0.1. Set the number of lines to 2. Center the text.
 
