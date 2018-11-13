@@ -32,8 +32,6 @@ Demonstrate your understanding of today's concepts by answering the following fr
 
 ## Project Setup
 
-Follow these steps to set up your project:
-
 Follow these steps to set up your project skeleton:
 
 1. Create a new iOS single view project. Clean it up as you like.
