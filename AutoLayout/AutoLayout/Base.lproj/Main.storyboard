@@ -29,7 +29,11 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" id="1OM-Ft-300"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6DJ-mv-lIL"/>
+                                    <barButtonItem systemItem="play" id="1OM-Ft-300"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Hkw-f5-AVF"/>
+                                    <barButtonItem systemItem="pause" id="bsV-j8-6eF"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aMn-dp-7gt"/>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="krt-u3-dtz">
