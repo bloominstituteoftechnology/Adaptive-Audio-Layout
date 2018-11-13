@@ -25,9 +25,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-0c-o27">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-0c-o27">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="6DJ-mv-lIL"/>
                                     <barButtonItem systemItem="play" id="1OM-Ft-300"/>
@@ -36,12 +35,17 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="aMn-dp-7gt"/>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="krt-u3-dtz">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="radio" translatesAutoresizingMaskIntoConstraints="NO" id="krt-u3-dtz">
                                 <rect key="frame" x="67" y="205" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jt7-0c-o27" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7u9-sj-1H0"/>
+                            <constraint firstItem="Jt7-0c-o27" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AcV-VG-3FX"/>
+                            <constraint firstItem="Jt7-0c-o27" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OwW-zQ-C9N"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -49,4 +53,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="radio" width="525" height="350"/>
+    </resources>
 </document>
