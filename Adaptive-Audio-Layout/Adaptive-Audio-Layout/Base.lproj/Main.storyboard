@@ -18,11 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hnz-qc-wqj">
-                                <rect key="frame" x="0.0" y="65" width="959" height="18"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Hnz-qc-wqj">
+                                <rect key="frame" x="0.0" y="43" width="959" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="eLJ-ZD-O2V"/>
+                                    <constraint firstAttribute="height" constant="40" id="eLJ-ZD-O2V"/>
                                 </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="n3w-vM-YDV"/>
                                     <barButtonItem systemItem="play" id="WaY-b8-PAG" userLabel="Play Button">
@@ -40,17 +41,32 @@
                                 </items>
                             </toolbar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="774-93-XpP">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="357"/>
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="335"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiss" translatesAutoresizingMaskIntoConstraints="NO" id="DA6-dX-Gr5">
-                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="357"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A long enough sentence to fulfill these design requirements thank you very much!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="cJM-NB-jwT">
-                                        <rect key="frame" x="333.5" y="101.5" width="333.5" height="154"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="48"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="keL-2W-G0Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="335"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiss" translatesAutoresizingMaskIntoConstraints="NO" id="DA6-dX-Gr5">
+                                                <rect key="frame" x="0.0" y="0.0" width="222.5" height="335"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A long enough sentence to fulfill these design requirements thank you very much!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="cJM-NB-jwT">
+                                                <rect key="frame" x="222.5" y="0.0" width="222" height="335"/>
+                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="48"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MSn-nS-IEB">
+                                                <rect key="frame" x="444.5" y="0.0" width="222.5" height="335"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="DA6-dX-Gr5" firstAttribute="height" secondItem="cJM-NB-jwT" secondAttribute="height" multiplier="1:1" id="bzT-bY-pJf"/>
+                                            <constraint firstItem="cJM-NB-jwT" firstAttribute="width" secondItem="MSn-nS-IEB" secondAttribute="width" id="dJQ-rH-cN8"/>
+                                            <constraint firstItem="cJM-NB-jwT" firstAttribute="height" secondItem="MSn-nS-IEB" secondAttribute="height" multiplier="1:1" id="rBP-ZX-YsK"/>
+                                        </constraints>
+                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                    </stackView>
                                 </subviews>
                                 <variation key="heightClass=compact" axis="horizontal"/>
                             </stackView>
