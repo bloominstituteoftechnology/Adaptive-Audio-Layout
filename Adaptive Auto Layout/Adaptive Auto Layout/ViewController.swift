@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    //var player = AVAudioPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-
+    
+    
+    @IBOutlet var player: AudioHelper!
+    @IBAction func play(_ sender: Any) {
+        player.play()
+    }
+    
+    @IBAction func pause(_ sender: Any) {
+            player.pause()
+       
+    }
+    
 }
 
