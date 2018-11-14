@@ -1,7 +1,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var player: AudioHelper!
+    
+    @IBOutlet weak var playButton: UIBarButtonItem!
+    
+    @IBOutlet weak var pauseButton: UIBarButtonItem!
+    
     @IBAction func play(_ sender: Any) {
         playButton.isEnabled = false
         pauseButton.isEnabled = true

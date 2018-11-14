@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,13 +24,13 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="tvA-al-yxi"/>
                                     <barButtonItem systemItem="play" id="jg4-Yj-z9Q">
                                         <connections>
-                                            <action selector="play:" destination="0R8-B7-beu" id="g2K-Cs-Bww"/>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="12w-gi-Uiv"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="FKt-GJ-h5m"/>
                                     <barButtonItem enabled="NO" systemItem="pause" id="v5S-jh-QcO">
                                         <connections>
-                                            <action selector="pause:" destination="0R8-B7-beu" id="u9U-5W-PhT"/>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="9dD-NZ-JrG"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ROi-he-qJc"/>
@@ -84,10 +84,14 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pauseButton" destination="v5S-jh-QcO" id="QPH-EZ-PjD"/>
+                        <outlet property="playButton" destination="jg4-Yj-z9Q" id="IxY-YJ-Orz"/>
+                        <outlet property="player" destination="2ih-TB-iJf" id="1Y5-t2-KLg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="2ih-TB-iJf" customClass="AudioHelper" customModule="AdaptiveAutoLayout" customModuleProvider="target"/>
-                <exit id="0R8-B7-beu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="61.600000000000001" y="26.53673163418291"/>
         </scene>
