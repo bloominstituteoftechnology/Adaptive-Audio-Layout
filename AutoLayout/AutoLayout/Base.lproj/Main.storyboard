@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="DCi-Vx-MP9">
+                                <rect key="frame" x="64" y="0.0" width="323" height="344"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lamba Radio FM: Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="hg8-Bv-wTm">
+                                <rect key="frame" x="424" y="160" width="393" height="94"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAX-FV-e3S">
+                                <rect key="frame" x="620.5" y="268" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Gd3-DQ-Vb9">
+                                <rect key="frame" x="44" y="344" width="808" height="49"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="coF-uQ-XnW"/>
+                                    <barButtonItem style="plain" systemItem="play" id="klw-Ii-X1m">
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="wry-qv-oba"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="ZR4-HI-Zys"/>
+                                    <barButtonItem style="plain" systemItem="pause" id="a96-1P-1zZ">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="wIg-p5-Fbp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MKp-WK-cUX"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cAX-FV-e3S" firstAttribute="centerX" secondItem="hg8-Bv-wTm" secondAttribute="centerX" id="0Dq-2s-bBj"/>
+                            <constraint firstItem="cAX-FV-e3S" firstAttribute="top" secondItem="Gd3-DQ-Vb9" secondAttribute="bottom" constant="-125" id="1Sc-y3-Pyr"/>
+                            <constraint firstItem="hg8-Bv-wTm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="4cy-za-TvA"/>
+                            <constraint firstItem="hg8-Bv-wTm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5RF-QT-2LB"/>
+                            <constraint firstItem="DCi-Vx-MP9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5zj-9B-AEM">
+                                <variation key="heightClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DCi-Vx-MP9" secondAttribute="trailing" id="6NE-CK-jyN"/>
+                            <constraint firstItem="Gd3-DQ-Vb9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6e5-qM-o1u"/>
+                            <constraint firstItem="DCi-Vx-MP9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EcI-KS-heO"/>
+                            <constraint firstItem="DCi-Vx-MP9" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.55" id="IjZ-0U-Ibu"/>
+                            <constraint firstItem="DCi-Vx-MP9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JG1-jI-wdl"/>
+                            <constraint firstItem="Gd3-DQ-Vb9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="K9O-Cf-G9S"/>
+                            <constraint firstItem="Gd3-DQ-Vb9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KFs-VV-Oos"/>
+                            <constraint firstItem="DCi-Vx-MP9" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.4" id="Lre-wn-4XV"/>
+                            <constraint firstItem="hg8-Bv-wTm" firstAttribute="leading" secondItem="DCi-Vx-MP9" secondAttribute="trailing" constant="37" id="MJn-au-7TN"/>
+                            <constraint firstItem="cAX-FV-e3S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OPz-rB-yoL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hg8-Bv-wTm" secondAttribute="trailing" constant="8" id="RsP-3Y-IwY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hg8-Bv-wTm" secondAttribute="trailing" constant="20" id="SY9-e4-i1r">
+                                <variation key="heightClass=compact" constant="35"/>
+                            </constraint>
+                            <constraint firstItem="cAX-FV-e3S" firstAttribute="centerX" secondItem="hg8-Bv-wTm" secondAttribute="centerX" id="YcY-tc-uFw"/>
+                            <constraint firstItem="Gd3-DQ-Vb9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="be4-AZ-nPX"/>
+                            <constraint firstItem="Gd3-DQ-Vb9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dcD-u2-Sqd"/>
+                            <constraint firstItem="hg8-Bv-wTm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eLz-8T-n2A"/>
+                            <constraint firstItem="DCi-Vx-MP9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eZg-to-9cu"/>
+                            <constraint firstItem="hg8-Bv-wTm" firstAttribute="top" secondItem="DCi-Vx-MP9" secondAttribute="bottom" constant="20" id="fIX-Sm-ciF"/>
+                            <constraint firstItem="Gd3-DQ-Vb9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="i2A-xW-oAe"/>
+                            <constraint firstItem="cAX-FV-e3S" firstAttribute="top" secondItem="hg8-Bv-wTm" secondAttribute="bottom" constant="8" id="ip2-3Q-zO1"/>
+                            <constraint firstItem="Gd3-DQ-Vb9" firstAttribute="top" secondItem="DCi-Vx-MP9" secondAttribute="bottom" id="uir-CV-JST">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6NE-CK-jyN"/>
+                                <exclude reference="RsP-3Y-IwY"/>
+                                <exclude reference="SY9-e4-i1r"/>
+                                <exclude reference="5zj-9B-AEM"/>
+                                <exclude reference="EcI-KS-heO"/>
+                                <exclude reference="IjZ-0U-Ibu"/>
+                                <exclude reference="JG1-jI-wdl"/>
+                                <exclude reference="Lre-wn-4XV"/>
+                                <exclude reference="eZg-to-9cu"/>
+                                <exclude reference="6e5-qM-o1u"/>
+                                <exclude reference="K9O-Cf-G9S"/>
+                                <exclude reference="dcD-u2-Sqd"/>
+                                <exclude reference="uir-CV-JST"/>
+                                <exclude reference="4cy-za-TvA"/>
+                                <exclude reference="5RF-QT-2LB"/>
+                                <exclude reference="MJn-au-7TN"/>
+                                <exclude reference="eLz-8T-n2A"/>
+                                <exclude reference="fIX-Sm-ciF"/>
+                                <exclude reference="0Dq-2s-bBj"/>
+                                <exclude reference="1Sc-y3-Pyr"/>
+                                <exclude reference="OPz-rB-yoL"/>
+                                <exclude reference="YcY-tc-uFw"/>
+                                <exclude reference="ip2-3Q-zO1"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="SY9-e4-i1r"/>
+                                <include reference="5zj-9B-AEM"/>
+                                <include reference="Lre-wn-4XV"/>
+                                <include reference="eZg-to-9cu"/>
+                                <include reference="6e5-qM-o1u"/>
+                                <include reference="K9O-Cf-G9S"/>
+                                <include reference="dcD-u2-Sqd"/>
+                                <include reference="uir-CV-JST"/>
+                                <include reference="5RF-QT-2LB"/>
+                                <include reference="MJn-au-7TN"/>
+                                <include reference="0Dq-2s-bBj"/>
+                                <include reference="1Sc-y3-Pyr"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="6NE-CK-jyN"/>
+                                <include reference="RsP-3Y-IwY"/>
+                                <include reference="EcI-KS-heO"/>
+                                <include reference="IjZ-0U-Ibu"/>
+                                <include reference="JG1-jI-wdl"/>
+                                <include reference="4cy-za-TvA"/>
+                                <include reference="eLz-8T-n2A"/>
+                                <include reference="fIX-Sm-ciF"/>
+                                <include reference="OPz-rB-yoL"/>
+                                <include reference="YcY-tc-uFw"/>
+                                <include reference="ip2-3Q-zO1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="nowPlayingLabel" destination="cAX-FV-e3S" id="wTS-qp-cD0"/>
+                        <outlet property="pauseButton" destination="a96-1P-1zZ" id="ehb-Sa-4kf"/>
+                        <outlet property="playButton" destination="klw-Ii-X1m" id="62c-TT-cqC"/>
+                        <outlet property="player" destination="tVV-B8-b0Q" id="2sJ-Sc-Qfc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="tVV-B8-b0Q" customClass="AudioHelper" customModule="AutoLayout" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="53.523238380809602" y="28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="vintage-technology-music-old" width="525" height="350"/>
+    </resources>
+</document>
