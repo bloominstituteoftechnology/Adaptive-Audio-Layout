@@ -82,13 +82,16 @@ Populate the toolbar with five items:
 
 Use the attributes inspector to disable the pause button.
 
-Use constraints to place the toolbar flush against the bottom safe area, and abutting the leading and trailing safe areas.
+Use the included radio image from Pexels.com. Without resizing the image, add it to an image view. Set the content mode to aspect fill. Enable Clip to Bounds.
 
-Use the included radio image from Pexels.com. Without resizing the image, add it to an image view. Set the content mode to scale aspect fill. Enable Clip to Bounds.
+For your label:
+- use the text "Lambda Radio FM: Voice of the Future"
+- Set the font size to 48 points and select any font face other than the system default. 
+- Enable Autoshrink as Minimum Font Scale and set its value to 0.1. 
+- Set the number of lines to 2. 
+- Center the text.
 
-Use the text "Lambda Radio FM: Voice of the Future" or your label. Set the font size to 48 points and select any font face other than the system default. Enable Autoshrink as Minimum Font Scale and set its value to 0.1. Set the number of lines to 2. Center the text.
-
-Add constraints that stretch the toolbar flush against the bottom, left, and right of your view.
+Add constraints that stretch the toolbar flush against the bottom safe area, and abutting the leading edge, and trailing edge of the safe area.
 
 ## Orientation Layout
 
@@ -96,10 +99,10 @@ Next, you set up constraints for separate horizontal and vertical layouts. Don't
 
 Create a horizontal layout where the image view sits on the left of the screen and the text view is to its right, aligning their vertical centers. Leave 20-point spaces between the image view and the Lambda Radio label. Leave at least 20 points between the Lambda Radio label and the trailing view edge. The image view should take up no more than 40% of the horizontal safe space.
 
-Create a vertical layout where the image view sits at the top of the screen and the text view is beneath it, aligning their horizontal centers. Leave space between the image view, the label, and the bottom toolbar.
+Create a vertical layout where the image view sits at the top of the screen and the label is beneath it, aligning their horizontal centers. Leave space between the image view, the label, and the bottom toolbar.
 
 
-## Connectinging up the Project
+## Connecting up the Project
 
 1. Create an instance of the AudioHelper class in Interface Builder by adding an Object from the library to your ViewController scene. Set its class in the identity inspector.
 2. Use control-drag to add three outlets to the ViewController class: the `playButton` bar button item, the `pauseButton` bar button item, and a `player` that points to the AudioHelper instance.
