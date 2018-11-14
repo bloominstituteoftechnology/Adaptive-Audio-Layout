@@ -14,9 +14,9 @@ class ViewController: UIViewController {
         pauseButton.isEnabled = true
         player.play()
         
-//        if playButton.isEnabled == false {
-//            nowPlayingLabel.text = "Now Playing"
-//        }
+        if playButton.isEnabled == false {
+            nowPlayingLabel.text = "Now Playing"
+        }
     }
     
     @IBAction func pause(_ sender: Any) {
@@ -24,9 +24,9 @@ class ViewController: UIViewController {
         pauseButton.isEnabled = false
         player.pause()
         
-//        if playButton.isEnabled == true {
-//            nowPlayingLabel.text = ""
-//        }
+        if playButton.isEnabled == true {
+            nowPlayingLabel.text = ""
+        }
     }
 }
 
