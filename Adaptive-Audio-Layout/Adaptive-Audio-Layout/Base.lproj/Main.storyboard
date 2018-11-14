@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,16 +15,16 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adaptive_Audio_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hnz-qc-wqj">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="343" width="667" height="32"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="n3w-vM-YDV"/>
                                     <barButtonItem systemItem="play" id="WaY-b8-PAG" userLabel="Play Button">
                                         <connections>
-                                            <action selector="play:" destination="BYZ-38-t0r" id="dF8-MS-geH"/>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="2en-4O-pvJ"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="rM5-JY-6Vm"/>
@@ -36,19 +36,37 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="BNs-hH-ZXH"/>
                                 </items>
                             </toolbar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="774-93-XpP">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="225"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiss" translatesAutoresizingMaskIntoConstraints="NO" id="DA6-dX-Gr5">
+                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="225"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A long enough sentence to fulfill these design requirements thank you very much!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="cJM-NB-jwT">
+                                        <rect key="frame" x="333.5" y="71" width="333.5" height="154"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="774-93-XpP" secondAttribute="trailing" id="0qy-4u-sf8"/>
                             <constraint firstItem="Hnz-qc-wqj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Gxs-rz-4w3"/>
+                            <constraint firstItem="774-93-XpP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="P31-id-slC"/>
                             <constraint firstAttribute="trailing" secondItem="Hnz-qc-wqj" secondAttribute="trailing" id="YJM-Bf-vAq"/>
                             <constraint firstItem="Hnz-qc-wqj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eTW-Fi-5ma"/>
+                            <constraint firstItem="774-93-XpP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gSb-8O-wgZ"/>
+                            <constraint firstItem="774-93-XpP" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.6" id="nwL-Ct-bN2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="pauseButton" destination="oww-dQ-674" id="ok5-EF-3Fe"/>
-                        <outlet property="playButton" destination="Hnz-qc-wqj" id="m1P-4h-R2Q"/>
-                        <outlet property="playButton2" destination="WaY-b8-PAG" id="HnP-U0-c6y"/>
+                        <outlet property="playButton" destination="WaY-b8-PAG" id="kN2-f1-Hii"/>
                         <outlet property="player" destination="CHQ-wv-Yhg" id="0GW-7N-BP7"/>
                     </connections>
                 </viewController>
@@ -57,4 +75,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="swiss" width="3264" height="2448"/>
+    </resources>
 </document>
