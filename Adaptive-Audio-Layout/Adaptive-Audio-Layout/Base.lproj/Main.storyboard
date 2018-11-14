@@ -19,7 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hnz-qc-wqj">
-                                <rect key="frame" x="0.0" y="51" width="959" height="32"/>
+                                <rect key="frame" x="0.0" y="65" width="959" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="eLJ-ZD-O2V"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="n3w-vM-YDV"/>
                                     <barButtonItem systemItem="play" id="WaY-b8-PAG" userLabel="Play Button">
@@ -36,14 +39,14 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="BNs-hH-ZXH"/>
                                 </items>
                             </toolbar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="774-93-XpP">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="335"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="774-93-XpP">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="357"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiss" translatesAutoresizingMaskIntoConstraints="NO" id="DA6-dX-Gr5">
-                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="335"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="357"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A long enough sentence to fulfill these design requirements thank you very much!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="cJM-NB-jwT">
-                                        <rect key="frame" x="333.5" y="181" width="333.5" height="154"/>
+                                        <rect key="frame" x="333.5" y="101.5" width="333.5" height="154"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="48"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -56,11 +59,12 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="774-93-XpP" secondAttribute="trailing" id="0qy-4u-sf8"/>
                             <constraint firstItem="Hnz-qc-wqj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Gxs-rz-4w3"/>
+                            <constraint firstItem="774-93-XpP" firstAttribute="bottom" secondItem="Hnz-qc-wqj" secondAttribute="top" id="NO2-Yw-hk0"/>
                             <constraint firstItem="774-93-XpP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="P31-id-slC"/>
+                            <constraint firstItem="Hnz-qc-wqj" firstAttribute="top" secondItem="774-93-XpP" secondAttribute="bottom" id="Sj0-5h-jC0"/>
                             <constraint firstAttribute="trailing" secondItem="Hnz-qc-wqj" secondAttribute="trailing" id="YJM-Bf-vAq"/>
                             <constraint firstItem="Hnz-qc-wqj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eTW-Fi-5ma"/>
                             <constraint firstItem="774-93-XpP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gSb-8O-wgZ"/>
-                            <constraint firstItem="774-93-XpP" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" constant="-40" id="nwL-Ct-bN2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
