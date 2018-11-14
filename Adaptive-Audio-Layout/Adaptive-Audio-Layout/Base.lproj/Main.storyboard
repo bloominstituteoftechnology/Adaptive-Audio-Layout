@@ -48,9 +48,12 @@
                     <connections>
                         <outlet property="pauseButton" destination="oww-dQ-674" id="ok5-EF-3Fe"/>
                         <outlet property="playButton" destination="Hnz-qc-wqj" id="m1P-4h-R2Q"/>
+                        <outlet property="playButton2" destination="WaY-b8-PAG" id="HnP-U0-c6y"/>
+                        <outlet property="player" destination="CHQ-wv-Yhg" id="0GW-7N-BP7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="CHQ-wv-Yhg" customClass="AudioHelper" customModule="Adaptive_Audio_Layout" customModuleProvider="target"/>
             </objects>
         </scene>
     </scenes>
