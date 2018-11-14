@@ -24,11 +24,16 @@ Your completed application will look like the following video:
 
 Demonstrate your understanding of today's concepts by answering the following free-form questions. Submit them as a text file along with your project.
 
-* What is auto layout and why do iOS developers use it?
-* What is a constraint? Are compression resistance and content hugging constraints?
-* What role does priority play? When do you adjust priority?
-* When should you use stack views? What advantages do stack views offer?
-* How does text autoshrink work and what are its advantages and disadvantages?
+•    What is auto layout and why do iOS developers use it?
+Answer:    It is a technology that allows us to make dynamically adaptable views for multiple devices, screens sizes, orientations and geometries. 
+•    What is a constraint? Are compression resistance and content hugging constraints?
+Answer:     Is a linear equation stating the relationship between two or more view objects. 
+•    What role does priority play? When do you adjust priority?
+Answer:     Priority lets us set up hierarchy so the view knows what the maximum and minimum requirements we are setting for objects in our views. 
+•    When should you use stack views? What advantages do stack views offer?
+Answer:     Almost always. They allow us to make easy relationships between two or more objects and are very useful lining up multiple items. 
+•    How does text autoshrink work and what are its advantages and disadvantages?
+Answer:     It allows us to set a minimum size text so text can be shrunken before it is truncated using an ellipsis.  
 
 ## Project Setup
 

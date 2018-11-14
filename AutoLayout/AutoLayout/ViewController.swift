@@ -6,7 +6,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var pauseButton: UIBarButtonItem!
     @IBOutlet weak var nowPlayingLabel: UILabel!
     
-    
     @IBOutlet var player: AudioHelper!
     
     
@@ -15,10 +14,9 @@ class ViewController: UIViewController {
         pauseButton.isEnabled = true
         player.play()
         
-        if playButton.isEnabled == false {
-            nowPlayingLabel.text = "Now Playing"
-            print(nowPlayingLabel.text)
-        }
+//        if playButton.isEnabled == false {
+//            nowPlayingLabel.text = "Now Playing"
+//        }
     }
     
     @IBAction func pause(_ sender: Any) {
@@ -26,10 +24,9 @@ class ViewController: UIViewController {
         pauseButton.isEnabled = false
         player.pause()
         
-        if playButton.isEnabled == true {
-            nowPlayingLabel.text = ""
-            print(nowPlayingLabel.text)
-        }
+//        if playButton.isEnabled == true {
+//            nowPlayingLabel.text = ""
+//        }
     }
 }
 
