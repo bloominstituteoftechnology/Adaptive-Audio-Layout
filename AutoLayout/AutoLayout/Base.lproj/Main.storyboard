@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,138 +15,56 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radio" translatesAutoresizingMaskIntoConstraints="NO" id="krt-u3-dtz">
-                                <rect key="frame" x="20" y="0.0" width="281.5" height="375"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="krt-u3-dtz" secondAttribute="height" multiplier="1/4" id="6ef-K1-Daf">
-                                        <variation key="heightClass=regular" constant="0.0"/>
-                                    </constraint>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="krt-u3-dtz" secondAttribute="height" multiplier="3/4" id="uK9-vp-4UG"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="6ef-K1-Daf"/>
-                                        <exclude reference="uK9-vp-4UG"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="uK9-vp-4UG"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="6ef-K1-Daf"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lambda Radio FM: Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="bsw-mA-mkQ">
-                                <rect key="frame" x="321.5" y="125.5" width="325.5" height="124.5"/>
-                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="48"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-0c-o27">
-                                <rect key="frame" x="0.0" y="51" width="959" height="32"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6DJ-mv-lIL"/>
-                                    <barButtonItem systemItem="play" id="1OM-Ft-300"/>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Hkw-f5-AVF">
-                                        <connections>
-                                            <action selector="play:" destination="BYZ-38-t0r" id="n87-yF-nwY"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem systemItem="pause" id="bsV-j8-6eF">
-                                        <connections>
-                                            <action selector="pause:" destination="BYZ-38-t0r" id="kHm-0u-w2z"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aMn-dp-7gt"/>
-                                </items>
-                            </toolbar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6cY-UF-ZgW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="C6E-Fs-xeS">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radio" translatesAutoresizingMaskIntoConstraints="NO" id="krt-u3-dtz">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Lambda Radio FM: Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="bsw-mA-mkQ">
+                                                <rect key="frame" x="0.0" y="301.5" width="375" height="301.5"/>
+                                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="48"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                    </stackView>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-0c-o27">
+                                        <rect key="frame" x="0.0" y="875" width="83" height="44"/>
+                                        <items>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="6DJ-mv-lIL"/>
+                                            <barButtonItem systemItem="play" id="1OM-Ft-300">
+                                                <connections>
+                                                    <action selector="play:" destination="BYZ-38-t0r" id="iSC-gG-rQy"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Hkw-f5-AVF"/>
+                                            <barButtonItem systemItem="pause" id="bsV-j8-6eF">
+                                                <connections>
+                                                    <action selector="pause:" destination="BYZ-38-t0r" id="kHm-0u-w2z"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" systemItem="flexibleSpace" id="aMn-dp-7gt"/>
+                                        </items>
+                                    </toolbar>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bsw-mA-mkQ" firstAttribute="leading" secondItem="krt-u3-dtz" secondAttribute="trailing" constant="20" id="3LN-KO-QBU"/>
-                            <constraint firstItem="Jt7-0c-o27" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7u9-sj-1H0"/>
-                            <constraint firstItem="bsw-mA-mkQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8DG-fC-wdI"/>
-                            <constraint firstItem="Jt7-0c-o27" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AcV-VG-3FX"/>
-                            <constraint firstItem="krt-u3-dtz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D8S-1x-ySH">
-                                <variation key="heightClass=compact" constant="20"/>
-                            </constraint>
-                            <constraint firstItem="krt-u3-dtz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gfn-C2-91j"/>
-                            <constraint firstItem="krt-u3-dtz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KO0-tU-aJI"/>
-                            <constraint firstItem="krt-u3-dtz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kiv-sY-QB1"/>
-                            <constraint firstItem="Jt7-0c-o27" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OwW-zQ-C9N"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bsw-mA-mkQ" secondAttribute="trailing" constant="20" id="QeB-BN-7VV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="krt-u3-dtz" secondAttribute="trailing" id="Utp-OP-QBk"/>
-                            <constraint firstItem="bsw-mA-mkQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XFP-6x-zLG"/>
-                            <constraint firstItem="bsw-mA-mkQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="a06-Bj-l9s"/>
-                            <constraint firstItem="bsw-mA-mkQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b5U-AA-Uq2"/>
-                            <constraint firstItem="krt-u3-dtz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cZJ-TF-DVk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bsw-mA-mkQ" secondAttribute="trailing" constant="20" id="far-eF-yQt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="krt-u3-dtz" secondAttribute="bottom" id="jZk-e2-GWT"/>
-                            <constraint firstItem="bsw-mA-mkQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mXo-qH-AJy">
-                                <variation key="heightClass=regular" constant="30"/>
-                            </constraint>
-                            <constraint firstItem="bsw-mA-mkQ" firstAttribute="top" secondItem="krt-u3-dtz" secondAttribute="bottom" constant="20" id="o6o-v2-WuW"/>
-                            <constraint firstAttribute="trailing" secondItem="bsw-mA-mkQ" secondAttribute="trailing" constant="20" id="wtY-6Y-Vry">
-                                <variation key="heightClass=regular" constant="30"/>
-                            </constraint>
-                            <constraint firstItem="krt-u3-dtz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yMl-6K-MaC"/>
+                            <constraint firstItem="6cY-UF-ZgW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0Lo-g3-mwz"/>
+                            <constraint firstItem="6cY-UF-ZgW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N9D-Pa-9hy"/>
+                            <constraint firstAttribute="trailing" secondItem="6cY-UF-ZgW" secondAttribute="trailing" id="YJf-sN-Sw7"/>
+                            <constraint firstItem="6cY-UF-ZgW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hBz-8b-Yfu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="QeB-BN-7VV"/>
-                                <exclude reference="Utp-OP-QBk"/>
-                                <exclude reference="far-eF-yQt"/>
-                                <exclude reference="jZk-e2-GWT"/>
-                                <exclude reference="D8S-1x-ySH"/>
-                                <exclude reference="Gfn-C2-91j"/>
-                                <exclude reference="KO0-tU-aJI"/>
-                                <exclude reference="Kiv-sY-QB1"/>
-                                <exclude reference="cZJ-TF-DVk"/>
-                                <exclude reference="yMl-6K-MaC"/>
-                                <exclude reference="3LN-KO-QBU"/>
-                                <exclude reference="8DG-fC-wdI"/>
-                                <exclude reference="XFP-6x-zLG"/>
-                                <exclude reference="a06-Bj-l9s"/>
-                                <exclude reference="b5U-AA-Uq2"/>
-                                <exclude reference="mXo-qH-AJy"/>
-                                <exclude reference="o6o-v2-WuW"/>
-                                <exclude reference="wtY-6Y-Vry"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact">
-                            <mask key="constraints">
-                                <exclude reference="QeB-BN-7VV"/>
-                                <include reference="far-eF-yQt"/>
-                                <include reference="jZk-e2-GWT"/>
-                                <include reference="D8S-1x-ySH"/>
-                                <include reference="Gfn-C2-91j"/>
-                                <include reference="cZJ-TF-DVk"/>
-                                <include reference="3LN-KO-QBU"/>
-                                <include reference="XFP-6x-zLG"/>
-                                <exclude reference="a06-Bj-l9s"/>
-                                <exclude reference="b5U-AA-Uq2"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="constraints">
-                                <include reference="Utp-OP-QBk"/>
-                                <include reference="KO0-tU-aJI"/>
-                                <include reference="Kiv-sY-QB1"/>
-                                <include reference="yMl-6K-MaC"/>
-                                <include reference="8DG-fC-wdI"/>
-                                <include reference="mXo-qH-AJy"/>
-                                <include reference="o6o-v2-WuW"/>
-                                <include reference="wtY-6Y-Vry"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="pause" destination="bsV-j8-6eF" id="wUv-2t-e7h"/>
@@ -157,7 +75,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <customObject id="cpQ-ZZ-Yyr" customClass="AudioHelper" customModule="AutoLayout" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="53.523238380809602" y="130.40000000000001"/>
+            <point key="canvasLocation" x="52.989130434782609" y="128.98550724637681"/>
         </scene>
     </scenes>
     <resources>
