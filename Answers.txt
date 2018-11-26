@@ -1,0 +1,18 @@
+What is auto layout and why do iOS developers use it?
+Auto layout will automatically make constraints.  It often guessing wrong so iOS developers avoid using it.
+
+
+What is a constraint? Are compression resistance and content hugging constraints?
+Constraints tell where the edges of an image are.  Compression and hugging tell which constraint is more powerful.
+
+
+What role does priority play? When do you adjust priority?
+
+
+
+When should you use stack views? What advantages do stack views offer?
+You should use stack views pretty much all the time when aligning multiple views. Stack views make it easy to align multiple images.  
+
+
+How does text autoshrink work and what are its advantages and disadvantages?
+Autoshrink insures the text will show, no matter its size.  Its advantages it its easy way to make it work, disadvantage is it can be too small to read.
