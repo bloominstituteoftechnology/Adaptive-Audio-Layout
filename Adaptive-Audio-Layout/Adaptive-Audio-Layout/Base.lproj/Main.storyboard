@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,43 +15,76 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adaptive_Audio_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxK-h4-c3D">
-                                <rect key="frame" x="0.0" y="343" width="667" height="32"/>
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="b43-l2-jKP"/>
-                                    <barButtonItem systemItem="play" id="Z4B-5q-X0p"/>
+                                    <barButtonItem systemItem="play" id="Z4B-5q-X0p">
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="Fg1-XI-3g0"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="fKC-6d-Ebh"/>
-                                    <barButtonItem systemItem="pause" id="ZN6-m9-7XT"/>
+                                    <barButtonItem systemItem="pause" id="ZN6-m9-7XT">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="kVk-pI-LQe"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="DbO-b2-0Ob"/>
                                 </items>
                             </toolbar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="d1b-UA-R86">
-                                <rect key="frame" x="67" y="55" width="240" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="dov-QU-MST">
+                                <rect key="frame" x="0.0" y="276" width="375" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lambda Radio FM: Voice of the Future&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="dov-QU-MST">
-                                <rect key="frame" x="-113" y="219" width="806" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lambda Radio FM:
+Voice of the Future"</string>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="d1b-UA-R86">
+                                <rect key="frame" x="0.0" y="81" width="375" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dxK-h4-c3D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BbC-lG-8rx"/>
-                            <constraint firstItem="dxK-h4-c3D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qvX-zK-pmO"/>
-                            <constraint firstItem="dxK-h4-c3D" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wjO-SV-O77"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dxK-h4-c3D" secondAttribute="bottom" id="y4Q-Z8-AwU"/>
+                            <constraint firstItem="dxK-h4-c3D" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5rC-13-UCM"/>
+                            <constraint firstItem="dxK-h4-c3D" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6a4-yz-KWF"/>
+                            <constraint firstItem="dxK-h4-c3D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BF0-Wa-Hgt"/>
+                            <constraint firstItem="dxK-h4-c3D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uFd-g5-MIb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5rC-13-UCM"/>
+                                <exclude reference="6a4-yz-KWF"/>
+                                <exclude reference="BF0-Wa-Hgt"/>
+                                <exclude reference="uFd-g5-MIb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="5rC-13-UCM"/>
+                                <include reference="6a4-yz-KWF"/>
+                                <include reference="BF0-Wa-Hgt"/>
+                                <include reference="uFd-g5-MIb"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="ZN6-m9-7XT" id="9Pk-Yv-oZ7"/>
+                        <outlet property="playButton" destination="Z4B-5q-X0p" id="p7p-Zj-d7n"/>
+                        <outlet property="player" destination="apf-T5-Sfg" id="H7N-8N-4fW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="apf-T5-Sfg" customClass="AudioHelper" customModule="Adaptive_Audio_Layout" customModuleProvider="target"/>
             </objects>
+            <point key="canvasLocation" x="23.199999999999999" y="45.42728635682159"/>
         </scene>
     </scenes>
     <resources>
