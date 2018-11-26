@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,29 +15,38 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adaptive_Audio_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dxK-h4-c3D">
-                                <rect key="frame" x="0.0" y="615" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxK-h4-c3D">
+                                <rect key="frame" x="0.0" y="343" width="667" height="32"/>
                                 <items>
-                                    <barButtonItem title="Item" id="AEO-JL-Gar"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="b43-l2-jKP"/>
+                                    <barButtonItem systemItem="play" id="Z4B-5q-X0p"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="fKC-6d-Ebh"/>
+                                    <barButtonItem systemItem="pause" id="ZN6-m9-7XT"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DbO-b2-0Ob"/>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dov-QU-MST">
-                                <rect key="frame" x="166" y="218" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1b-UA-R86">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="d1b-UA-R86">
                                 <rect key="frame" x="67" y="55" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lambda Radio FM: Voice of the Future&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="dov-QU-MST">
+                                <rect key="frame" x="-113" y="219" width="806" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dxK-h4-c3D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BbC-lG-8rx"/>
+                            <constraint firstItem="dxK-h4-c3D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qvX-zK-pmO"/>
+                            <constraint firstItem="dxK-h4-c3D" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wjO-SV-O77"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dxK-h4-c3D" secondAttribute="bottom" id="y4Q-Z8-AwU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -45,4 +54,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="vintage-technology-music-old" width="525" height="350"/>
+    </resources>
 </document>
