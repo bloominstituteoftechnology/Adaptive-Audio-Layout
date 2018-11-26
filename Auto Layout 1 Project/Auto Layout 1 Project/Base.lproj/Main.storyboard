@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,39 +15,71 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Auto_Layout_1_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="e4P-2M-FaJ">
-                                <rect key="frame" x="67" y="118" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzy-px-IEk">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqq-Vb-HLn">
+                                <rect key="frame" x="0.0" y="51" width="959" height="32"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wie-77-We2"/>
-                                    <barButtonItem systemItem="play" id="4hR-r7-9BP"/>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="igG-3Z-JUk"/>
-                                    <barButtonItem enabled="NO" systemItem="pause" id="Ldp-Mw-qHN"/>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7Xe-Tf-d9d"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bxW-Lp-7qg"/>
+                                    <barButtonItem systemItem="play" id="N14-bT-wTC"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="0kI-Nd-jSc"/>
+                                    <barButtonItem systemItem="pause" id="Vkm-lH-8Av"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Ac4-Ts-df2"/>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Lambda Radio FM: Voice of the Future&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OP1-fy-H0m">
-                                <rect key="frame" x="0.0" y="309" width="375" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lambda Radio FM: Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="JBk-xb-j8s">
+                                <rect key="frame" x="39" y="306" width="303" height="56"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="pzY-10-pdf">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="150"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pzY-10-pdf" secondAttribute="trailing" id="4St-i2-yf5"/>
+                            <constraint firstItem="JBk-xb-j8s" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5QS-S4-wgM">
+                                <variation key="widthClass=compact" constant="-9.5"/>
+                            </constraint>
+                            <constraint firstItem="pzY-10-pdf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7vn-t5-hvj"/>
+                            <constraint firstItem="pzY-10-pdf" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="2:5" id="OfT-fW-E7Q"/>
+                            <constraint firstItem="pzY-10-pdf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WBO-k6-a0R"/>
+                            <constraint firstItem="uqq-Vb-HLn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZLC-lQ-pND"/>
+                            <constraint firstItem="uqq-Vb-HLn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iDP-q0-GPb"/>
+                            <constraint firstItem="JBk-xb-j8s" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kGL-ss-hcb">
+                                <variation key="widthClass=compact" constant="3"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uqq-Vb-HLn" secondAttribute="bottom" id="wdn-ul-kqJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4St-i2-yf5"/>
+                                <exclude reference="7vn-t5-hvj"/>
+                                <exclude reference="OfT-fW-E7Q"/>
+                                <exclude reference="WBO-k6-a0R"/>
+                                <exclude reference="5QS-S4-wgM"/>
+                                <exclude reference="kGL-ss-hcb"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4St-i2-yf5"/>
+                                <include reference="7vn-t5-hvj"/>
+                                <include reference="OfT-fW-E7Q"/>
+                                <include reference="WBO-k6-a0R"/>
+                                <include reference="5QS-S4-wgM"/>
+                                <include reference="kGL-ss-hcb"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56.799999999999997" y="27.436281859070466"/>
+            <point key="canvasLocation" x="55.200000000000003" y="25.637181409295355"/>
         </scene>
     </scenes>
     <resources>
