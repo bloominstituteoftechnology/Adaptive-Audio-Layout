@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalHuggingPriority="253" translatesAutoresizingMaskIntoConstraints="NO" id="osF-gs-caE">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="lmR-gj-DpG"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pse-ag-b39"/>
+                                    <barButtonItem systemItem="play" id="0E1-7f-1HI"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Zpg-fT-frD"/>
+                                    <barButtonItem enabled="NO" systemItem="pause" id="10Y-gZ-4SK"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="4I0-yz-Xah"/>
+                                </items>
+                            </toolbar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="zHv-xM-GDU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="310.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zHv-xM-GDU" secondAttribute="height" multiplier="4:3" id="6EH-Td-2gk"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6EH-Td-2gk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="6EH-Td-2gk"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" text="Lambda Radio FM: Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Ge8-3t-aXN">
+                                <rect key="frame" x="20.666666666666657" y="342.66666666666669" width="372.66666666666674" height="112"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ge8-3t-aXN" firstAttribute="centerX" secondItem="zHv-xM-GDU" secondAttribute="centerX" id="2r5-Oj-h53"/>
+                            <constraint firstItem="zHv-xM-GDU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Vl-lh-aW1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zHv-xM-GDU" secondAttribute="bottom" id="6vG-OZ-gdd">
+                                <variation key="heightClass=compact" constant="44"/>
+                            </constraint>
+                            <constraint firstItem="zHv-xM-GDU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7XJ-jz-T0j">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="zHv-xM-GDU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="Dhw-p5-TUk"/>
+                            <constraint firstItem="zHv-xM-GDU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gbq-K7-mhW"/>
+                            <constraint firstItem="Ge8-3t-aXN" firstAttribute="leading" secondItem="zHv-xM-GDU" secondAttribute="trailing" constant="20" id="HtB-i7-w27"/>
+                            <constraint firstItem="Ge8-3t-aXN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.55" id="K9B-iN-7Xa"/>
+                            <constraint firstItem="Ge8-3t-aXN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="OZn-RE-qVK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ge8-3t-aXN" secondAttribute="trailing" constant="20" id="QRO-dD-6iJ"/>
+                            <constraint firstItem="Ge8-3t-aXN" firstAttribute="top" secondItem="zHv-xM-GDU" secondAttribute="bottom" constant="32" id="Rjx-QF-FUK"/>
+                            <constraint firstItem="osF-gs-caE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VGK-VP-jMl"/>
+                            <constraint firstItem="Ge8-3t-aXN" firstAttribute="centerY" secondItem="zHv-xM-GDU" secondAttribute="centerY" id="gG5-9d-Ufr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zHv-xM-GDU" secondAttribute="trailing" id="jf0-1o-o53"/>
+                            <constraint firstItem="osF-gs-caE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pEW-A2-QT4"/>
+                            <constraint firstItem="zHv-xM-GDU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rPu-w3-Itm"/>
+                            <constraint firstItem="osF-gs-caE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wOP-CO-ICB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4Vl-lh-aW1"/>
+                                <exclude reference="7XJ-jz-T0j"/>
+                                <exclude reference="Dhw-p5-TUk"/>
+                                <exclude reference="Gbq-K7-mhW"/>
+                                <exclude reference="rPu-w3-Itm"/>
+                                <exclude reference="6vG-OZ-gdd"/>
+                                <exclude reference="QRO-dD-6iJ"/>
+                                <exclude reference="jf0-1o-o53"/>
+                                <exclude reference="2r5-Oj-h53"/>
+                                <exclude reference="HtB-i7-w27"/>
+                                <exclude reference="K9B-iN-7Xa"/>
+                                <exclude reference="OZn-RE-qVK"/>
+                                <exclude reference="Rjx-QF-FUK"/>
+                                <exclude reference="gG5-9d-Ufr"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Dhw-p5-TUk"/>
+                                <include reference="Gbq-K7-mhW"/>
+                                <include reference="rPu-w3-Itm"/>
+                                <include reference="6vG-OZ-gdd"/>
+                                <include reference="QRO-dD-6iJ"/>
+                                <include reference="HtB-i7-w27"/>
+                                <exclude reference="K9B-iN-7Xa"/>
+                                <include reference="gG5-9d-Ufr"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4Vl-lh-aW1"/>
+                                <include reference="7XJ-jz-T0j"/>
+                                <include reference="jf0-1o-o53"/>
+                                <include reference="2r5-Oj-h53"/>
+                                <include reference="OZn-RE-qVK"/>
+                                <include reference="Rjx-QF-FUK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="audioHelper" destination="iBV-0d-j21" id="mOu-RR-MFR"/>
+                        <outlet property="pauseButton" destination="10Y-gZ-4SK" id="i8A-uM-ggB"/>
+                        <outlet property="playButton" destination="0E1-7f-1HI" id="Gf4-gE-zxV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="iBV-0d-j21" customClass="AudioHelper" customModule="AdaptiveAutoLayout" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="52.989130434782609" y="26.086956521739133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="vintage-technology-music-old" width="525" height="350"/>
+    </resources>
+</document>
