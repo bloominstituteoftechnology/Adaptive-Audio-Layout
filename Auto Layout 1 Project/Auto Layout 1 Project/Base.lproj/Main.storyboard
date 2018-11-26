@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Auto_Layout_1_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uqq-Vb-HLn">
-                                <rect key="frame" x="0.0" y="51" width="959" height="32"/>
+                                <rect key="frame" x="0.0" y="1014" width="92" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="bxW-Lp-7qg"/>
                                     <barButtonItem systemItem="play" id="N14-bT-wTC"/>
@@ -28,41 +28,70 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Ac4-Ts-df2"/>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lambda Radio FM: Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="JBk-xb-j8s">
-                                <rect key="frame" x="39" y="306" width="303" height="56"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="pzY-10-pdf">
+                                <rect key="frame" x="0.0" y="20" width="414" height="286.33333333333331"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lambda Radio FM: Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="JBk-xb-j8s">
+                                <rect key="frame" x="20.666666666666629" y="322" width="372.66666666666674" height="112"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="pzY-10-pdf">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="150"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pzY-10-pdf" secondAttribute="trailing" id="4St-i2-yf5"/>
-                            <constraint firstItem="JBk-xb-j8s" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5QS-S4-wgM">
-                                <variation key="widthClass=compact" constant="-9.5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pzY-10-pdf" secondAttribute="bottom" id="51j-fr-jTr">
+                                <variation key="heightClass=compact" constant="44"/>
                             </constraint>
+                            <constraint firstItem="JBk-xb-j8s" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5QS-S4-wgM">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="pzY-10-pdf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6IV-Ay-BTz"/>
+                            <constraint firstItem="JBk-xb-j8s" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" id="706-hW-hRI"/>
                             <constraint firstItem="pzY-10-pdf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7vn-t5-hvj"/>
+                            <constraint firstItem="JBk-xb-j8s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F49-75-E1g"/>
                             <constraint firstItem="pzY-10-pdf" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="2:5" id="OfT-fW-E7Q"/>
+                            <constraint firstItem="pzY-10-pdf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RuW-wi-0i5"/>
+                            <constraint firstItem="pzY-10-pdf" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.4" id="Sq0-bk-zjl"/>
                             <constraint firstItem="pzY-10-pdf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WBO-k6-a0R"/>
                             <constraint firstItem="uqq-Vb-HLn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZLC-lQ-pND"/>
                             <constraint firstItem="uqq-Vb-HLn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iDP-q0-GPb"/>
                             <constraint firstItem="JBk-xb-j8s" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kGL-ss-hcb">
-                                <variation key="widthClass=compact" constant="3"/>
+                                <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstAttribute="trailing" secondItem="JBk-xb-j8s" secondAttribute="trailing" constant="20" id="kQg-I3-jyz"/>
+                            <constraint firstItem="JBk-xb-j8s" firstAttribute="leading" secondItem="pzY-10-pdf" secondAttribute="trailing" constant="20" id="uyA-Ku-a4t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uqq-Vb-HLn" secondAttribute="bottom" id="wdn-ul-kqJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="4St-i2-yf5"/>
+                                <exclude reference="51j-fr-jTr"/>
+                                <exclude reference="6IV-Ay-BTz"/>
                                 <exclude reference="7vn-t5-hvj"/>
                                 <exclude reference="OfT-fW-E7Q"/>
+                                <exclude reference="RuW-wi-0i5"/>
+                                <exclude reference="Sq0-bk-zjl"/>
                                 <exclude reference="WBO-k6-a0R"/>
                                 <exclude reference="5QS-S4-wgM"/>
+                                <exclude reference="706-hW-hRI"/>
+                                <exclude reference="F49-75-E1g"/>
                                 <exclude reference="kGL-ss-hcb"/>
+                                <exclude reference="kQg-I3-jyz"/>
+                                <exclude reference="uyA-Ku-a4t"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="51j-fr-jTr"/>
+                                <include reference="6IV-Ay-BTz"/>
+                                <include reference="RuW-wi-0i5"/>
+                                <include reference="Sq0-bk-zjl"/>
+                                <include reference="F49-75-E1g"/>
+                                <include reference="kQg-I3-jyz"/>
+                                <include reference="uyA-Ku-a4t"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -72,7 +101,13 @@
                                 <include reference="OfT-fW-E7Q"/>
                                 <include reference="WBO-k6-a0R"/>
                                 <include reference="5QS-S4-wgM"/>
+                                <include reference="706-hW-hRI"/>
                                 <include reference="kGL-ss-hcb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="4St-i2-yf5"/>
                             </mask>
                         </variation>
                     </view>
