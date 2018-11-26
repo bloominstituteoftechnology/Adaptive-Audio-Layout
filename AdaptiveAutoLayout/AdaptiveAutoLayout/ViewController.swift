@@ -21,6 +21,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func play(_ sender: Any) {
+        toggleButtons()
+        audioHelper.play()
+    }
+    
+    @IBAction func pause(_ sender: Any) {
+        toggleButtons()
+        audioHelper.pause()
+    }
+    
+    private func toggleButtons() {
+        playButton.isEnabled.toggle()
+        pauseButton.isEnabled.toggle()
+    }
 }
 
