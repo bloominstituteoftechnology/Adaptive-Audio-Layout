@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="uvg-8t-mBA">
+                    <rect key="frame" x="0.0" y="20" width="375" height="479.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="sTn-Rh-3RB">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="KDR-HH-NQb">
+                            <rect key="frame" x="0.0" y="358" width="375" height="121.5"/>
+                            <string key="text">Lambda Radio FM:
+Voice of the Future</string>
+                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="48"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="KDR-HH-NQb" secondAttribute="trailing" id="HBf-SS-ljl"/>
+                        <constraint firstItem="KDR-HH-NQb" firstAttribute="leading" secondItem="uvg-8t-mBA" secondAttribute="leading" id="NCl-5O-toy"/>
+                    </constraints>
+                </stackView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXa-sV-z2N">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="IXA-P2-MVg"/>
+                        <barButtonItem style="plain" systemItem="play" id="sbv-V6-6Xc"/>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="jYK-HF-wry"/>
+                        <barButtonItem enabled="NO" style="plain" systemItem="pause" id="exG-Qc-pdJ"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="vZS-V0-6o6"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uvg-8t-mBA" secondAttribute="trailing" id="2F9-8T-lEp"/>
+                <constraint firstItem="ZXa-sV-z2N" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="LtM-aC-Zcz"/>
+                <constraint firstItem="uvg-8t-mBA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gQa-92-bg4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZXa-sV-z2N" secondAttribute="bottom" id="hq5-9X-BAu"/>
+                <constraint firstItem="uvg-8t-mBA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="oC0-K5-lcN"/>
+                <constraint firstItem="ZXa-sV-z2N" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xzF-Ax-Ubf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="vintage-technology-music-old" width="525" height="350"/>
+    </resources>
+</document>
