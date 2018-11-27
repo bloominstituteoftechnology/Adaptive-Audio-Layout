@@ -10,20 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var playButton: UIView!
+
+
     
+    @IBOutlet weak var playButton: UIBarButtonItem!
     
-    @IBOutlet var pauseButton: UIView!
-    
+    @IBOutlet weak var pauseButton: UIBarButtonItem!
     
     @IBOutlet var player: AudioHelper!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    
     @IBAction func play(_ sender: Any) {
         playButton.isEnabled = false
         pauseButton.isEnabled = true
