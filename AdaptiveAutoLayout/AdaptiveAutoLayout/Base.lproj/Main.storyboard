@@ -36,6 +36,12 @@
                                             <action selector="pause:" destination="BYZ-38-t0r" id="mOR-N6-ZQa"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="BQM-ux-Trb"/>
+                                    <barButtonItem systemItem="fastForward" id="KVI-mf-yMl">
+                                        <connections>
+                                            <action selector="skipForward:" destination="BYZ-38-t0r" id="NGR-fi-Yk8"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4I0-yz-Xah"/>
                                 </items>
                             </toolbar>
@@ -89,14 +95,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="6vG-OZ-gdd"/>
+                                <exclude reference="QRO-dD-6iJ"/>
+                                <exclude reference="jf0-1o-o53"/>
                                 <exclude reference="4Vl-lh-aW1"/>
                                 <exclude reference="7XJ-jz-T0j"/>
                                 <exclude reference="Dhw-p5-TUk"/>
                                 <exclude reference="Gbq-K7-mhW"/>
                                 <exclude reference="rPu-w3-Itm"/>
-                                <exclude reference="6vG-OZ-gdd"/>
-                                <exclude reference="QRO-dD-6iJ"/>
-                                <exclude reference="jf0-1o-o53"/>
                                 <exclude reference="2r5-Oj-h53"/>
                                 <exclude reference="HtB-i7-w27"/>
                                 <exclude reference="K9B-iN-7Xa"/>
@@ -107,11 +113,11 @@
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
+                                <include reference="6vG-OZ-gdd"/>
+                                <include reference="QRO-dD-6iJ"/>
                                 <include reference="Dhw-p5-TUk"/>
                                 <include reference="Gbq-K7-mhW"/>
                                 <include reference="rPu-w3-Itm"/>
-                                <include reference="6vG-OZ-gdd"/>
-                                <include reference="QRO-dD-6iJ"/>
                                 <include reference="HtB-i7-w27"/>
                                 <exclude reference="K9B-iN-7Xa"/>
                                 <include reference="gG5-9d-Ufr"/>
@@ -119,9 +125,9 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
+                                <include reference="jf0-1o-o53"/>
                                 <include reference="4Vl-lh-aW1"/>
                                 <include reference="7XJ-jz-T0j"/>
-                                <include reference="jf0-1o-o53"/>
                                 <include reference="2r5-Oj-h53"/>
                                 <include reference="OZn-RE-qVK"/>
                                 <include reference="Rjx-QF-FUK"/>
@@ -130,6 +136,7 @@
                     </view>
                     <connections>
                         <outlet property="audioHelper" destination="iBV-0d-j21" id="mOu-RR-MFR"/>
+                        <outlet property="infoLabel" destination="Ge8-3t-aXN" id="nWf-60-fkM"/>
                         <outlet property="pauseButton" destination="10Y-gZ-4SK" id="i8A-uM-ggB"/>
                         <outlet property="playButton" destination="0E1-7f-1HI" id="Gf4-gE-zxV"/>
                     </connections>

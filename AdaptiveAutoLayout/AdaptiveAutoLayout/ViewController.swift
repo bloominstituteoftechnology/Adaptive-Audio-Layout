@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIBarButtonItem!
     @IBOutlet weak var pauseButton: UIBarButtonItem!
     @IBOutlet var audioHelper: AudioHelper!
+    @IBOutlet weak var infoLabel: UILabel!
     
     
     
@@ -31,9 +32,14 @@ class ViewController: UIViewController {
         audioHelper.pause()
     }
     
+    @IBAction func skipForward(_ sender: Any) {
+        audioHelper.next()
+    }
+    
     private func toggleButtons() {
         playButton.isEnabled.toggle()
         pauseButton.isEnabled.toggle()
     }
+    
 }
 
