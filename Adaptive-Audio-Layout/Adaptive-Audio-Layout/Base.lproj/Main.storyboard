@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="landscape">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adaptive_Audio_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxK-h4-c3D">
-                                <rect key="frame" x="0.0" y="350" width="736" height="64"/>
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="b43-l2-jKP"/>
                                     <barButtonItem systemItem="play" id="Z4B-5q-X0p">
@@ -36,78 +36,62 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="DbO-b2-0Ob"/>
                                 </items>
                             </toolbar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="Mcw-VL-ybq">
-                                <rect key="frame" x="0.0" y="0.0" width="294.33333333333331" height="350"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="YQl-Ag-78l">
-                                <rect key="frame" x="314.33333333333326" y="159" width="401.66666666666674" height="96"/>
-                                <string key="text">Lambda Radio FM:
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="q6x-Xq-s2o">
+                                <rect key="frame" x="-55.666666666666657" y="10" width="525.33333333333337" height="716"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="Mcw-VL-ybq">
+                                        <rect key="frame" x="0.0" y="0.0" width="525.33333333333337" height="238.66666666666666"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="YQl-Ag-78l" userLabel="Lambda Radio FM: Voice of the Future">
+                                        <rect key="frame" x="124.00000000000003" y="251.66666666666671" width="277.66666666666674" height="464.33333333333326"/>
+                                        <string key="text">Lambda Radio FM:
 Voice of the Future</string>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="48"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="48"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YQl-Ag-78l" firstAttribute="top" secondItem="Mcw-VL-ybq" secondAttribute="bottom" constant="20" id="nJ2-Tx-FHZ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nJ2-Tx-FHZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="nJ2-Tx-FHZ"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YQl-Ag-78l" secondAttribute="trailing" constant="20" id="1AJ-0y-Qqw" userLabel="Safe Area.trailing = Lambda Radio FM: Voice of the Future.trailing + 20"/>
-                            <constraint firstItem="YQl-Ag-78l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5bg-ri-uMH"/>
+                            <constraint firstItem="q6x-Xq-s2o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4EQ-qb-iKl"/>
                             <constraint firstItem="dxK-h4-c3D" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B7B-1T-2PU"/>
-                            <constraint firstItem="Mcw-VL-ybq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EeH-Zm-rWD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mcw-VL-ybq" secondAttribute="trailing" id="FC7-SA-8xP"/>
-                            <constraint firstItem="Mcw-VL-ybq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HlC-D3-xKO"/>
+                            <constraint firstItem="q6x-Xq-s2o" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="KOf-xN-9p7"/>
                             <constraint firstItem="dxK-h4-c3D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q1U-A8-zNQ"/>
-                            <constraint firstItem="dxK-h4-c3D" firstAttribute="top" secondItem="Mcw-VL-ybq" secondAttribute="bottom" id="Sdx-Wn-0TS"/>
-                            <constraint firstItem="Mcw-VL-ybq" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.4" id="Zhg-UM-nd1"/>
                             <constraint firstItem="dxK-h4-c3D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zho-Hh-F7b"/>
-                            <constraint firstItem="Mcw-VL-ybq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c67-aq-Jpg"/>
-                            <constraint firstItem="Mcw-VL-ybq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cVo-A1-b5a"/>
-                            <constraint firstItem="YQl-Ag-78l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="chn-si-LqW"/>
-                            <constraint firstItem="YQl-Ag-78l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cqa-My-sgq"/>
+                            <constraint firstItem="q6x-Xq-s2o" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dQW-Tf-dgO"/>
                             <constraint firstItem="dxK-h4-c3D" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eKf-Lt-Bsi"/>
-                            <constraint firstItem="YQl-Ag-78l" firstAttribute="leading" secondItem="Mcw-VL-ybq" secondAttribute="trailing" constant="20" id="kjm-h2-ZoR"/>
-                            <constraint firstItem="Mcw-VL-ybq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mGx-4L-k9r"/>
-                            <constraint firstItem="Mcw-VL-ybq" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.4" id="ubC-xX-nWA"/>
+                            <constraint firstItem="Mcw-VL-ybq" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="1:3" id="wQc-GL-KtC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="1AJ-0y-Qqw"/>
-                                <exclude reference="FC7-SA-8xP"/>
-                                <exclude reference="EeH-Zm-rWD"/>
-                                <exclude reference="HlC-D3-xKO"/>
-                                <exclude reference="Zhg-UM-nd1"/>
-                                <exclude reference="c67-aq-Jpg"/>
-                                <exclude reference="cVo-A1-b5a"/>
-                                <exclude reference="mGx-4L-k9r"/>
-                                <exclude reference="ubC-xX-nWA"/>
-                                <exclude reference="5bg-ri-uMH"/>
-                                <exclude reference="chn-si-LqW"/>
-                                <exclude reference="cqa-My-sgq"/>
-                                <exclude reference="kjm-h2-ZoR"/>
-                                <exclude reference="Sdx-Wn-0TS"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact">
-                            <mask key="constraints">
-                                <include reference="1AJ-0y-Qqw"/>
-                                <include reference="EeH-Zm-rWD"/>
-                                <include reference="HlC-D3-xKO"/>
-                                <include reference="cVo-A1-b5a"/>
-                                <include reference="ubC-xX-nWA"/>
-                                <include reference="5bg-ri-uMH"/>
-                                <include reference="kjm-h2-ZoR"/>
-                                <include reference="Sdx-Wn-0TS"/>
+                                <exclude reference="wQc-GL-KtC"/>
+                                <exclude reference="4EQ-qb-iKl"/>
+                                <exclude reference="KOf-xN-9p7"/>
+                                <exclude reference="dQW-Tf-dgO"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="FC7-SA-8xP"/>
-                                <include reference="Zhg-UM-nd1"/>
-                                <include reference="c67-aq-Jpg"/>
-                                <include reference="mGx-4L-k9r"/>
-                                <include reference="chn-si-LqW"/>
-                                <include reference="cqa-My-sgq"/>
+                                <include reference="wQc-GL-KtC"/>
+                                <include reference="4EQ-qb-iKl"/>
+                                <include reference="KOf-xN-9p7"/>
+                                <include reference="dQW-Tf-dgO"/>
                             </mask>
                         </variation>
                     </view>
