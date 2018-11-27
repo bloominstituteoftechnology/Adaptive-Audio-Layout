@@ -12,6 +12,7 @@
 		BDDD853221ACA67600490E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDD853021ACA67600490E44 /* Main.storyboard */; };
 		BDDD853421ACA67600490E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDD853321ACA67600490E44 /* Assets.xcassets */; };
 		BDDD853721ACA67600490E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDD853521ACA67600490E44 /* LaunchScreen.storyboard */; };
+		BDDD853F21ACA71600490E44 /* AudioHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDD853E21ACA71600490E44 /* AudioHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BDDD853321ACA67600490E44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDDD853621ACA67600490E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDDD853821ACA67600490E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDD853E21ACA71600490E44 /* AudioHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				BDDD852C21ACA67600490E44 /* AppDelegate.swift */,
 				BDDD852E21ACA67600490E44 /* ViewController.swift */,
 				BDDD853021ACA67600490E44 /* Main.storyboard */,
+				BDDD853E21ACA71600490E44 /* AudioHelper.swift */,
 				BDDD853321ACA67600490E44 /* Assets.xcassets */,
 				BDDD853521ACA67600490E44 /* LaunchScreen.storyboard */,
 				BDDD853821ACA67600490E44 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDD853F21ACA71600490E44 /* AudioHelper.swift in Sources */,
 				BDDD852F21ACA67600490E44 /* ViewController.swift in Sources */,
 				BDDD852D21ACA67600490E44 /* AppDelegate.swift in Sources */,
 			);
