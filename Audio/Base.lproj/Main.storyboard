@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Audio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="foT-Cz-Mqg">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="flexibleSpace" id="8Xg-Jm-Usz"/>
+                                    <barButtonItem systemItem="play" id="YDV-S0-NU8" userLabel="PlayButton">
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="2Cr-xM-CgH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem id="Iu5-sR-QPb"/>
+                                    <barButtonItem width="42" systemItem="fixedSpace" id="euZ-ys-z7k"/>
+                                    <barButtonItem enabled="NO" systemItem="pause" id="tJs-qP-KWK">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="uRt-SL-hWf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="0En-1X-vUz"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lambda FM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiP-6i-DvY">
+                                <rect key="frame" x="142.5" y="435" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="music-old-radio-1539" translatesAutoresizingMaskIntoConstraints="NO" id="4Jp-eL-fwa">
+                                <rect key="frame" x="0.0" y="40" width="375" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Jp-eL-fwa" secondAttribute="height" multiplier="1:1" id="OHD-he-S6t"/>
+                                    <constraint firstAttribute="width" secondItem="4Jp-eL-fwa" secondAttribute="height" multiplier="1:1" id="VX6-Lk-Tth"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OHD-he-S6t"/>
+                                        <exclude reference="VX6-Lk-Tth"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="OHD-he-S6t"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="VX6-Lk-Tth"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hiP-6i-DvY" firstAttribute="leading" secondItem="4Jp-eL-fwa" secondAttribute="trailing" constant="20" id="1za-oy-vIV"/>
+                            <constraint firstItem="4Jp-eL-fwa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2oY-DX-Ezo"/>
+                            <constraint firstItem="4Jp-eL-fwa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8Yf-JF-CHy"/>
+                            <constraint firstItem="hiP-6i-DvY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9J8-U6-auA"/>
+                            <constraint firstItem="hiP-6i-DvY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BgL-9i-kvv"/>
+                            <constraint firstItem="foT-Cz-Mqg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G2J-rd-ap5"/>
+                            <constraint firstItem="foT-Cz-Mqg" firstAttribute="top" secondItem="4Jp-eL-fwa" secondAttribute="bottom" id="LNt-2B-O1N">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="4Jp-eL-fwa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mbq-Hj-pN8">
+                                <variation key="heightClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="foT-Cz-Mqg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bpA-Ez-ZfF"/>
+                            <constraint firstItem="foT-Cz-Mqg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="h71-g0-c3s"/>
+                            <constraint firstItem="hiP-6i-DvY" firstAttribute="top" secondItem="4Jp-eL-fwa" secondAttribute="bottom" constant="64" id="hbs-PS-wfx">
+                                <variation key="heightClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="4Jp-eL-fwa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l5I-yj-WRz"/>
+                            <constraint firstItem="hiP-6i-DvY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lHU-Vk-jqd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Jp-eL-fwa" secondAttribute="trailing" id="mdb-Kq-XYt">
+                                <variation key="heightClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Jp-eL-fwa" secondAttribute="trailing" id="mpc-lC-N5W"/>
+                            <constraint firstItem="4Jp-eL-fwa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sWe-to-5tQ"/>
+                            <constraint firstItem="4Jp-eL-fwa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tkt-bU-QHY"/>
+                            <constraint firstItem="hiP-6i-DvY" firstAttribute="top" secondItem="4Jp-eL-fwa" secondAttribute="bottom" constant="20" id="zyo-QF-ZQf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mdb-Kq-XYt"/>
+                                <exclude reference="mpc-lC-N5W"/>
+                                <exclude reference="2oY-DX-Ezo"/>
+                                <exclude reference="8Yf-JF-CHy"/>
+                                <exclude reference="Mbq-Hj-pN8"/>
+                                <exclude reference="l5I-yj-WRz"/>
+                                <exclude reference="sWe-to-5tQ"/>
+                                <exclude reference="tkt-bU-QHY"/>
+                                <exclude reference="1za-oy-vIV"/>
+                                <exclude reference="9J8-U6-auA"/>
+                                <exclude reference="BgL-9i-kvv"/>
+                                <exclude reference="hbs-PS-wfx"/>
+                                <exclude reference="lHU-Vk-jqd"/>
+                                <exclude reference="zyo-QF-ZQf"/>
+                                <exclude reference="LNt-2B-O1N"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="2oY-DX-Ezo"/>
+                                <include reference="tkt-bU-QHY"/>
+                                <include reference="1za-oy-vIV"/>
+                                <include reference="9J8-U6-auA"/>
+                                <include reference="BgL-9i-kvv"/>
+                                <include reference="LNt-2B-O1N"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="mdb-Kq-XYt"/>
+                                <include reference="mpc-lC-N5W"/>
+                                <include reference="8Yf-JF-CHy"/>
+                                <include reference="Mbq-Hj-pN8"/>
+                                <exclude reference="l5I-yj-WRz"/>
+                                <include reference="sWe-to-5tQ"/>
+                                <include reference="hbs-PS-wfx"/>
+                                <include reference="lHU-Vk-jqd"/>
+                                <exclude reference="zyo-QF-ZQf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="tJs-qP-KWK" id="r3h-0k-Hhv"/>
+                        <outlet property="playButton" destination="YDV-S0-NU8" id="HBp-gv-Scw"/>
+                        <outlet property="player" destination="23k-GN-EpC" id="gKq-oQ-Ocx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="23k-GN-EpC" customClass="AudioHelper" customModule="Audio" customModuleProvider="target"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="music-old-radio-1539" width="3888" height="2592"/>
+    </resources>
+</document>
