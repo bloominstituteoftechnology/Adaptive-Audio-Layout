@@ -13,7 +13,6 @@
 		37CDA49A21ACA19600B8287D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CDA49921ACA19600B8287D /* Assets.xcassets */; };
 		37CDA49D21ACA19600B8287D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CDA49B21ACA19600B8287D /* LaunchScreen.storyboard */; };
 		37CDA4A521ACA49B00B8287D /* AudioHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CDA4A421ACA49B00B8287D /* AudioHelper.swift */; };
-		37CDA4A721ACA9EE00B8287D /* LambdaRadio.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37CDA4A621ACA9EE00B8287D /* LambdaRadio.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		37CDA49C21ACA19600B8287D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37CDA49E21ACA19600B8287D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37CDA4A421ACA49B00B8287D /* AudioHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHelper.swift; sourceTree = "<group>"; };
-		37CDA4A621ACA9EE00B8287D /* LambdaRadio.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LambdaRadio.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +58,8 @@
 			children = (
 				37CDA49221ACA19500B8287D /* AppDelegate.swift */,
 				37CDA49421ACA19500B8287D /* ViewController.swift */,
-				37CDA49621ACA19500B8287D /* Main.storyboard */,
-				37CDA4A621ACA9EE00B8287D /* LambdaRadio.xib */,
 				37CDA4A421ACA49B00B8287D /* AudioHelper.swift */,
+				37CDA49621ACA19500B8287D /* Main.storyboard */,
 				37CDA49921ACA19600B8287D /* Assets.xcassets */,
 				37CDA49B21ACA19600B8287D /* LaunchScreen.storyboard */,
 				37CDA49E21ACA19600B8287D /* Info.plist */,
@@ -128,7 +125,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37CDA4A721ACA9EE00B8287D /* LambdaRadio.xib in Resources */,
 				37CDA49D21ACA19600B8287D /* LaunchScreen.storyboard in Resources */,
 				37CDA49A21ACA19600B8287D /* Assets.xcassets in Resources */,
 				37CDA49821ACA19500B8287D /* Main.storyboard in Resources */,
