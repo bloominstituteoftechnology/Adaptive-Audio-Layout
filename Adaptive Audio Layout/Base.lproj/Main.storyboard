@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ncw-aF-hJg">
-                                <rect key="frame" x="0.0" y="0.0" width="736" height="482.66666666666669"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ncw-aF-hJg">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="350"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="Ivy-bm-0ci" userLabel="Radio">
-                                        <rect key="frame" x="0.0" y="0.0" width="736" height="350"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="294.33333333333331" height="350"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="7TK-cB-SL5" userLabel="Name">
-                                        <rect key="frame" x="0.0" y="358" width="736" height="124.66666666666669"/>
+                                        <rect key="frame" x="302.33333333333326" y="112.66666666666666" width="433.66666666666674" height="124.66666666666666"/>
                                         <string key="text">Lambda Radio FM: 
 Voice of the Future</string>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="48"/>
@@ -33,8 +33,8 @@ Voice of the Future</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <variation key="heightClass=compact" alignment="fill" axis="horizontal" distribution="fill" spacing="8"/>
-                                <variation key="widthClass=regular" alignment="fill" axis="vertical" distribution="fill" spacing="8"/>
+                                <variation key="heightClass=compact" alignment="center" axis="horizontal" distribution="fill" spacing="8"/>
+                                <variation key="widthClass=regular" alignment="center" axis="horizontal" distribution="fill" spacing="8"/>
                             </stackView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJf-5g-0oK">
                                 <rect key="frame" x="0.0" y="48" width="1058" height="44"/>
@@ -59,7 +59,6 @@ Voice of the Future</string>
                             <constraint firstItem="ncw-aF-hJg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b6d-cY-9dp"/>
                             <constraint firstItem="Ivy-bm-0ci" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.4" id="gQK-g1-MJm"/>
                             <constraint firstItem="ncw-aF-hJg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jRE-np-Fav"/>
-                            <constraint firstItem="cJf-5g-0oK" firstAttribute="top" secondItem="ncw-aF-hJg" secondAttribute="bottom" constant="209.33000000000001" id="lfP-l7-sEi"/>
                             <constraint firstAttribute="trailing" secondItem="ncw-aF-hJg" secondAttribute="trailing" id="n9s-bB-Fm2"/>
                             <constraint firstItem="cJf-5g-0oK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nze-Mq-YnO"/>
                             <constraint firstItem="ncw-aF-hJg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qgS-4b-mvx"/>
@@ -79,7 +78,6 @@ Voice of the Future</string>
                                 <exclude reference="Dcu-x2-uBj"/>
                                 <exclude reference="GiH-Pf-xz5"/>
                                 <exclude reference="Nxc-ZC-2M6"/>
-                                <exclude reference="lfP-l7-sEi"/>
                                 <exclude reference="nze-Mq-YnO"/>
                             </mask>
                         </variation>
@@ -101,7 +99,6 @@ Voice of the Future</string>
                                 <include reference="n9s-bB-Fm2"/>
                                 <include reference="5DU-xe-0YK"/>
                                 <include reference="Nxc-ZC-2M6"/>
-                                <include reference="lfP-l7-sEi"/>
                                 <include reference="nze-Mq-YnO"/>
                             </mask>
                         </variation>
