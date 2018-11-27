@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -13,19 +13,14 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="IpV-r8-ZEN" customClass="AudioHelper" customModule="Adaptive_Audio_Layout_rh" customModuleProvider="target"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adaptive_Audio_Layout_rh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="kBZ-xl-7DN">
-                                <rect key="frame" x="67" y="98" width="240" height="128"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-td-4Dm">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-td-4Dm">
-                                <rect key="frame" x="0.0" y="343" width="667" height="32"/>
                                 <items>
                                     <barButtonItem id="MjU-Oe-9x3"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="GCy-fs-gim"/>
@@ -43,26 +38,52 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="oyr-6j-cIk"/>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="1Gu-xY-fIJ">
-                                <rect key="frame" x="340" y="114" width="278" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Lambda Radio FM:
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hng-9s-662">
+                                <rect key="frame" x="0.0" y="20" width="414" height="281.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="kBZ-xl-7DN">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="165.66666666666666"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kBZ-xl-7DN" secondAttribute="height" multiplier="5:2" id="q8y-ki-HDV"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="q8y-ki-HDV"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="q8y-ki-HDV"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="1Gu-xY-fIJ">
+                                        <rect key="frame" x="68.333333333333343" y="185.66666666666666" width="277.66666666666663" height="95.999999999999972"/>
+                                        <string key="text">Lambda Radio FM:
 Voice of the Future</string>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="48"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <variation key="widthClass=compact" alignment="center" axis="vertical" spacing="20"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hBc-td-4Dm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0V8-RV-A4s"/>
-                            <constraint firstItem="hBc-td-4Dm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5kS-sn-qid"/>
-                            <constraint firstItem="hBc-td-4Dm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KyV-Uk-O4O"/>
-                            <constraint firstItem="hBc-td-4Dm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LBD-bG-54S"/>
-                            <constraint firstItem="hBc-td-4Dm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dCX-jd-wTO"/>
-                            <constraint firstItem="hBc-td-4Dm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="v23-Lb-cux"/>
+                            <constraint firstItem="Hng-9s-662" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="Hqm-tp-5Ze"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Hqm-tp-5Ze"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Hqm-tp-5Ze"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="pauseButton" destination="8bC-Xf-vdC" id="jkn-du-Egg"/>
@@ -70,8 +91,10 @@ Voice of the Future</string>
                         <outlet property="player" destination="IpV-r8-ZEN" id="itf-Gw-NuT"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="IpV-r8-ZEN" customClass="AudioHelper" customModule="Adaptive_Audio_Layout_rh" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
+            <point key="canvasLocation" x="40.579710144927539" y="26.086956521739133"/>
         </scene>
     </scenes>
     <resources>
