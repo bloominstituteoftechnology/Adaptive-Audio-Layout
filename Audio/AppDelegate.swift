@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Audio
-//
-//  Created by Lambda_School_Loaner_18 on 10/10/18.
-//  Copyright © 2018 Lambda_School_Loaner_18. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
