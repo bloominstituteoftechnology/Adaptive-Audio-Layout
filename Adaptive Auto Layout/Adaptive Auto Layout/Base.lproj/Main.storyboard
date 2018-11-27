@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2j-MV-SiX">
-                                <rect key="frame" x="0.0" y="370" width="736" height="44"/>
+                                <rect key="frame" x="0.0" y="48" width="1058" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="1HS-D9-1bi"/>
                                     <barButtonItem style="plain" systemItem="play" id="JtC-II-oc5">
@@ -36,14 +36,14 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="s3p-Xo-aLi"/>
                                 </items>
                             </toolbar>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YzR-WF-RXh">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YzR-WF-RXh">
                                 <rect key="frame" x="0.0" y="0.0" width="716" height="331"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="4xp-qU-wfU">
                                         <rect key="frame" x="0.0" y="0.0" width="294.33333333333331" height="331"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lambda Radio FM:  Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="4gD-Cp-3YL">
-                                        <rect key="frame" x="294.33333333333326" y="0.0" width="421.66666666666674" height="331"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lambda Radio FM: Voice of the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="4gD-Cp-3YL">
+                                        <rect key="frame" x="314.33333333333326" y="0.0" width="401.66666666666674" height="331"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="48"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
