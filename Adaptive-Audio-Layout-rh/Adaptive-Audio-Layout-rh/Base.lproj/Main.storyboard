@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,9 +14,10 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="IpV-r8-ZEN" customClass="AudioHelper" customModule="Adaptive_Audio_Layout_rh" customModuleProvider="target"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adaptive_Audio_Layout_rh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="kBZ-xl-7DN">
@@ -24,18 +25,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-td-4Dm">
-                                <rect key="frame" x="0.0" y="915" width="83" height="44"/>
+                                <rect key="frame" x="0.0" y="343" width="667" height="32"/>
                                 <items>
                                     <barButtonItem id="MjU-Oe-9x3"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="GCy-fs-gim"/>
-                                    <barButtonItem systemItem="play" id="S8K-2f-L6e"/>
+                                    <barButtonItem systemItem="play" id="S8K-2f-L6e">
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="0Pg-Cr-mgN"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="bZI-gW-S9j"/>
-                                    <barButtonItem enabled="NO" style="plain" systemItem="pause" id="Z6h-3P-SHh"/>
+                                    <barButtonItem enabled="NO" style="plain" systemItem="pause" id="Z6h-3P-SHh">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="Dbm-vC-dq5"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="oyr-6j-cIk"/>
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="1Gu-xY-fIJ">
-                                <rect key="frame" x="48" y="259" width="278" height="96"/>
+                                <rect key="frame" x="340" y="114" width="278" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Lambda Radio FM:
 Voice of the Future</string>
@@ -47,11 +56,19 @@ Voice of the Future</string>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hBc-td-4Dm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0V8-RV-A4s"/>
+                            <constraint firstItem="hBc-td-4Dm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5kS-sn-qid"/>
+                            <constraint firstItem="hBc-td-4Dm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KyV-Uk-O4O"/>
                             <constraint firstItem="hBc-td-4Dm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LBD-bG-54S"/>
                             <constraint firstItem="hBc-td-4Dm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dCX-jd-wTO"/>
+                            <constraint firstItem="hBc-td-4Dm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="v23-Lb-cux"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="8bC-Xf-vdC" id="jkn-du-Egg"/>
+                        <outlet property="playButton" destination="8bC-Xf-vdC" id="uks-em-O01"/>
+                        <outlet property="player" destination="IpV-r8-ZEN" id="itf-Gw-NuT"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
