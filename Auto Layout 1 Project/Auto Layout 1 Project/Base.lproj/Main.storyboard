@@ -122,9 +122,11 @@
                     <connections>
                         <outlet property="pauseButton" destination="Vkm-lH-8Av" id="sl4-qd-3uf"/>
                         <outlet property="playButton" destination="N14-bT-wTC" id="aXy-cZ-ToR"/>
+                        <outlet property="player" destination="CaQ-AL-kVm" id="s13-uk-G6T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="CaQ-AL-kVm" customClass="AudioHelper" customModule="Auto_Layout_1_Project" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="55.200000000000003" y="25.637181409295355"/>
         </scene>

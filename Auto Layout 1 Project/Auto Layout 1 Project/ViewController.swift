@@ -1,10 +1,13 @@
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var playButton: UIBarButtonItem!
     
     @IBOutlet weak var pauseButton: UIBarButtonItem!
+    
+    @IBOutlet var player: AudioHelper!
     
     @IBAction func play(_ sender: Any) {
         playButton.isEnabled = false
