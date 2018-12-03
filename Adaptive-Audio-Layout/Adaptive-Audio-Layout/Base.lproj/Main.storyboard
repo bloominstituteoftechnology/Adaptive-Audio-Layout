@@ -108,7 +108,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="pausebutton" destination="tHg-3a-sRk" id="xi4-nS-B2I"/>
+                        <outlet property="pauseButton" destination="tHg-3a-sRk" id="KPb-bl-iRN"/>
                         <outlet property="playButton" destination="AnL-mI-dDw" id="yUL-hl-Tt3"/>
                         <outlet property="player" destination="QRZ-Vq-mKP" id="qeD-HY-aer"/>
                     </connections>

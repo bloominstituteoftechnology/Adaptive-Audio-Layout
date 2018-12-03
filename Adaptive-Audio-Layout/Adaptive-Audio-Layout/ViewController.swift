@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet var player: AudioHelper!
     @IBOutlet weak var playButton: UIBarButtonItem!
-    @IBOutlet weak var pausebutton: UIBarButtonItem!
+    @IBOutlet weak var pauseButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
