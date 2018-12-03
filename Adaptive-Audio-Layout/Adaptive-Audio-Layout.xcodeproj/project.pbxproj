@@ -12,6 +12,7 @@
 		37621A2521B5BB6100D88A95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37621A2321B5BB6100D88A95 /* Main.storyboard */; };
 		37621A2721B5BB6200D88A95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37621A2621B5BB6200D88A95 /* Assets.xcassets */; };
 		37621A2A21B5BB6200D88A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37621A2821B5BB6200D88A95 /* LaunchScreen.storyboard */; };
+		37621A3221B5BF3700D88A95 /* AudioHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37621A3121B5BF3700D88A95 /* AudioHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		37621A2621B5BB6200D88A95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37621A2921B5BB6200D88A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37621A2B21B5BB6200D88A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37621A3121B5BF3700D88A95 /* AudioHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				37621A1F21B5BB6100D88A95 /* AppDelegate.swift */,
 				37621A2121B5BB6100D88A95 /* ViewController.swift */,
 				37621A2321B5BB6100D88A95 /* Main.storyboard */,
+				37621A3121B5BF3700D88A95 /* AudioHelper.swift */,
 				37621A2621B5BB6200D88A95 /* Assets.xcassets */,
 				37621A2821B5BB6200D88A95 /* LaunchScreen.storyboard */,
 				37621A2B21B5BB6200D88A95 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37621A3221B5BF3700D88A95 /* AudioHelper.swift in Sources */,
 				37621A2221B5BB6100D88A95 /* ViewController.swift in Sources */,
 				37621A2021B5BB6100D88A95 /* AppDelegate.swift in Sources */,
 			);

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,114 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adaptive_Audio_Layout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vintage-technology-music-old" translatesAutoresizingMaskIntoConstraints="NO" id="Hhr-84-sId">
+                                <rect key="frame" x="0.0" y="20" width="414" height="350"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVR-FE-v1m">
+                                <rect key="frame" x="0.0" y="1014" width="92" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LaP-WQ-b0n"/>
+                                    <barButtonItem style="plain" systemItem="play" id="AnL-mI-dDw">
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="Y2D-jJ-lNQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="xNB-zP-VxL"/>
+                                    <barButtonItem style="plain" systemItem="pause" id="tHg-3a-sRk">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="YRi-9B-PFK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="tUP-mv-lof"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lambda Radio FM: Voice fo the Future" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="WZo-RB-F7P" userLabel="Lambda Radio FM: Voice fo the Future">
+                                <rect key="frame" x="20" y="390" width="374" height="121.33333333333331"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hhr-84-sId" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0T6-SD-hsU"/>
+                            <constraint firstAttribute="trailing" secondItem="Hhr-84-sId" secondAttribute="trailing" id="5fW-Qk-PDw"/>
+                            <constraint firstItem="WZo-RB-F7P" firstAttribute="leading" secondItem="Hhr-84-sId" secondAttribute="trailing" constant="20" id="8f2-Os-IZ2"/>
+                            <constraint firstItem="Hhr-84-sId" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EIy-0I-jZU"/>
+                            <constraint firstItem="OVR-FE-v1m" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Fpn-Zg-Knj"/>
+                            <constraint firstAttribute="trailing" secondItem="WZo-RB-F7P" secondAttribute="trailing" constant="8" id="Nth-Ue-Gqg"/>
+                            <constraint firstItem="OVR-FE-v1m" firstAttribute="top" secondItem="WZo-RB-F7P" secondAttribute="bottom" id="Tdh-mg-L8k"/>
+                            <constraint firstItem="OVR-FE-v1m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WSj-r1-llR"/>
+                            <constraint firstItem="WZo-RB-F7P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Y9o-bG-45A"/>
+                            <constraint firstItem="WZo-RB-F7P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gDp-h8-OEA"/>
+                            <constraint firstItem="OVR-FE-v1m" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iYh-qr-VUz"/>
+                            <constraint firstItem="Hhr-84-sId" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ozL-TJ-efj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WZo-RB-F7P" secondAttribute="trailing" constant="20" id="qQL-l7-GU6"/>
+                            <constraint firstItem="WZo-RB-F7P" firstAttribute="top" secondItem="Hhr-84-sId" secondAttribute="bottom" constant="20" id="t1j-LX-lyR"/>
+                            <constraint firstItem="OVR-FE-v1m" firstAttribute="top" secondItem="Hhr-84-sId" secondAttribute="bottom" id="uLN-0K-uKQ"/>
+                            <constraint firstItem="Hhr-84-sId" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.4" id="xYl-E9-6b2"/>
+                            <constraint firstItem="Hhr-84-sId" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yvS-16-BAY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qQL-l7-GU6"/>
+                                <exclude reference="0T6-SD-hsU"/>
+                                <exclude reference="5fW-Qk-PDw"/>
+                                <exclude reference="EIy-0I-jZU"/>
+                                <exclude reference="ozL-TJ-efj"/>
+                                <exclude reference="xYl-E9-6b2"/>
+                                <exclude reference="yvS-16-BAY"/>
+                                <exclude reference="8f2-Os-IZ2"/>
+                                <exclude reference="Nth-Ue-Gqg"/>
+                                <exclude reference="Y9o-bG-45A"/>
+                                <exclude reference="gDp-h8-OEA"/>
+                                <exclude reference="t1j-LX-lyR"/>
+                                <exclude reference="Tdh-mg-L8k"/>
+                                <exclude reference="uLN-0K-uKQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="EIy-0I-jZU"/>
+                                <include reference="xYl-E9-6b2"/>
+                                <include reference="yvS-16-BAY"/>
+                                <include reference="8f2-Os-IZ2"/>
+                                <include reference="Nth-Ue-Gqg"/>
+                                <include reference="gDp-h8-OEA"/>
+                                <include reference="Tdh-mg-L8k"/>
+                                <include reference="uLN-0K-uKQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="qQL-l7-GU6"/>
+                                <include reference="0T6-SD-hsU"/>
+                                <include reference="5fW-Qk-PDw"/>
+                                <include reference="ozL-TJ-efj"/>
+                                <include reference="Y9o-bG-45A"/>
+                                <include reference="t1j-LX-lyR"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="pausebutton" destination="tHg-3a-sRk" id="xi4-nS-B2I"/>
+                        <outlet property="playButton" destination="AnL-mI-dDw" id="yUL-hl-Tt3"/>
+                        <outlet property="player" destination="QRZ-Vq-mKP" id="qeD-HY-aer"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="QRZ-Vq-mKP" customClass="AudioHelper" customModule="Adaptive_Audio_Layout" customModuleProvider="target"/>
             </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="18.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="vintage-technology-music-old" width="525" height="350"/>
+    </resources>
 </document>
