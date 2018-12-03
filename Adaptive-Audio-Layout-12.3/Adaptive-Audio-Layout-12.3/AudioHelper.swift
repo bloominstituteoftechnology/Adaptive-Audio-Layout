@@ -3,16 +3,16 @@ import AVKit
 class AudioHelper: NSObject {
     let player: AVPlayer
     
-    override init () {
+    override init() {
         // Big Buck Bunny
-        let streamrequest = "https://www.radiantMediaPlayer.com/media/bbb-360p.mp4"
+        let streamrequest = "https://www.radiantmediaplayer.com/media/bbb-360p.mp4"
         guard let url = URL(string:streamrequest) else {
             fatalError("Bad URL configuration")
         }
         let asset = AVAsset(url: url)
         let item = AVPlayerItem(asset: asset)
         
-        // Create a player member
+        // Init my member
         self.player = AVPlayer(playerItem: item)
         
         // Init superclass members
