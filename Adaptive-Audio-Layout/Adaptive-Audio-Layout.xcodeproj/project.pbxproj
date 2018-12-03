@@ -12,6 +12,7 @@
 		270C15CD21B5C67C0070FFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270C15CB21B5C67C0070FFC1 /* Main.storyboard */; };
 		270C15CF21B5C67D0070FFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270C15CE21B5C67D0070FFC1 /* Assets.xcassets */; };
 		270C15D221B5C67D0070FFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270C15D021B5C67D0070FFC1 /* LaunchScreen.storyboard */; };
+		270C15DC21B5CE130070FFC1 /* AudioHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270C15DB21B5CE130070FFC1 /* AudioHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		270C15CE21B5C67D0070FFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270C15D121B5C67D0070FFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		270C15D321B5C67D0070FFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270C15DB21B5CE130070FFC1 /* AudioHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +56,11 @@
 		270C15C621B5C67C0070FFC1 /* Adaptive-Audio-Layout */ = {
 			isa = PBXGroup;
 			children = (
-				270C15C721B5C67C0070FFC1 /* AppDelegate.swift */,
-				270C15C921B5C67C0070FFC1 /* ViewController.swift */,
 				270C15CB21B5C67C0070FFC1 /* Main.storyboard */,
+				270C15C921B5C67C0070FFC1 /* ViewController.swift */,
+				270C15DB21B5CE130070FFC1 /* AudioHelper.swift */,
 				270C15CE21B5C67D0070FFC1 /* Assets.xcassets */,
+				270C15C721B5C67C0070FFC1 /* AppDelegate.swift */,
 				270C15D021B5C67D0070FFC1 /* LaunchScreen.storyboard */,
 				270C15D321B5C67D0070FFC1 /* Info.plist */,
 			);
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270C15DC21B5CE130070FFC1 /* AudioHelper.swift in Sources */,
 				270C15CA21B5C67C0070FFC1 /* ViewController.swift in Sources */,
 				270C15C821B5C67C0070FFC1 /* AppDelegate.swift in Sources */,
 			);
