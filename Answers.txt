@@ -1,0 +1,18 @@
+What is auto layout and why do iOS developers use it?
+Auto layout is a constrained based layout system that allows devices to look correct on different platforms and devices.  iOS developers it because it helps with visually laying out storyboards.
+
+
+What is a constraint? Are compression resistance and content hugging constraints?
+Constraints tell interface builder where and how an item is aligned 
+
+
+What role does priority play? When do you adjust priority?
+Priority comes into play when you have items without a set size and you want one to push the other to insure it shows properly. 
+
+
+When should you use stack views? What advantages do stack views offer?
+Use stack views when you have multiple items you want aligned off one another.  Advantages are it is much easier then to all the constraints individualy.  
+
+
+How does text autoshrink work and what are its advantages and disadvantages?
+Autoshrink adjusts size to fit.  Advantages are you can get fields as large as possible on different devices.  Disadvantages are it might shrink too small or interfere with other objects.
